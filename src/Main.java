@@ -1,9 +1,9 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter the base of the triangle:");
 //        float base = sc.nextFloat();
 //        System.out.println("Enter the height of the triangle:");
@@ -27,13 +27,13 @@ public class Main {
 //            e.printStackTrace();
 //        }
 
-        System.out.println("Enter year: ");
-        int year = sc.nextInt();
-        if (isLeapYear(year)) {
-            System.out.println("Leap year!");
-        } else {
-            System.out.println(("Not a Leap year!"));
-        }
+//        System.out.println("Enter year: ");
+//        int year = sc.nextInt();
+//        if (isLeapYear(year)) {
+//            System.out.println("Leap year!");
+//        } else {
+//            System.out.println(("Not a Leap year!"));
+//        }
 
 //        System.out.println("Enter two numbers: ");
 //        float numOne = sc.nextFloat();
@@ -48,6 +48,30 @@ public class Main {
 //        } catch (Exception e) {
 //            e.printStackTrace();
 //        }
+
+//        System.out.println("Enter a number: ");
+//        int number = sc.nextInt();
+//        printDigits(number);
+
+//        System.out.println("Enter a number: ");
+//        int number = sc.nextInt();
+//        System.out.println("The reverse is: " + reverseNumber(number));
+
+//        System.out.println("Enter a number: ");
+//        int number = sc.nextInt();
+//        if (checkPalindrome(number)) {
+//            System.out.println("Palindrome!");
+//        } else {
+//            System.out.println("Not A Palindrome!");
+//        }
+
+//        printPatternOne();
+//        printPatternTwo();
+//        printPatternThree();
+//        printPatternFour();
+//        printPatternFive();
+//        printPatternSix();
+//        printPatternSeven();
     }
 
 //    static methods belong to the class, non-static methods belong to instances of the class.
@@ -82,21 +106,21 @@ public class Main {
 //        return roots;
 //    }
 
-    public static boolean isLeapYear(int year) {
-        boolean isLeap = false;
-
-        if(year%4 == 0) {
-            if(year%100 == 0) {
-                if(year%400 == 0) {
-                    isLeap = true;
-                }
-            } else {
-                isLeap = true;
-            }
-        }
-
-        return isLeap;
-    }
+//    public static boolean isLeapYear(int year) {
+//        boolean isLeap = false;
+//
+//        if(year%4 == 0) {
+//            if(year%100 == 0) {
+//                if(year%400 == 0) {
+//                    isLeap = true;
+//                }
+//            } else {
+//                isLeap = true;
+//            }
+//        }
+//
+//        return isLeap;
+//    }
 
 //    public static float performArithmeticOperations(float numOne, float numTwo, String operation) throws Exception {
 //        float result = 0.0f;
@@ -117,5 +141,141 @@ public class Main {
 //            default: throw new Exception("Not a valid operation");
 //        }
 //        return result;
+//    }
+
+//    public static void printDigits(int num) {
+//        int copyOfNum = num;
+//
+//        while(copyOfNum > 0) {
+//            int digit = copyOfNum % 10;
+//            System.out.println(digit);
+//            copyOfNum = copyOfNum / 10;
+//        }
+//    }
+
+//    public static int reverseNumber(int num) {
+//        int copyOfNum = num, reverseNum = 0;
+//
+//        while(copyOfNum > 0) {
+//            int digit = copyOfNum % 10;
+//            reverseNum = reverseNum * 10 + digit;
+//            copyOfNum = copyOfNum / 10;
+//        }
+//
+//        return reverseNum;
+//    }
+//
+//    public static boolean checkPalindrome(int num) {
+//        int revNum = reverseNumber(num);
+//        return num == revNum;
+//    }
+
+//    public static void printPatternOne() {
+//        for(int i=0; i<5; i++) {
+//            for(int j=0; j<i+1; j++) {
+//                System.out.print(j + 1 + " ");
+//            }
+//            System.out.println("");
+//        }
+//    }
+//
+//    public static void printPatternTwo() {
+//        int counter = 1;
+//        for(int i=0; i<5; i++) {
+//            for(int j=0; j<i+1; j++) {
+//                System.out.format("%02d ", counter++);
+//            }
+//            System.out.println("");
+//        }
+//    }
+
+//    public static void printPatternThree() {
+//        for(int i=0; i<5; i++) {
+//            for(int j=i; j<5; j++) {
+//                System.out.format("%2d", j+1);
+//            }
+//            System.out.println("");
+//        }
+//    }
+//    public static void printPatternFour() {
+//        for(int i=0; i<5; i++) {
+//            for(int j=0; j<5; j++) {
+//                if(j<i) {
+//                    System.out.print("  ");
+//                } else {
+//                    System.out.print("* ");
+//                }
+//            }
+//            System.out.println();
+//        }
+//    }
+//
+//    public static void printPatternFive() {
+//        for(int i=5; i>0; i--) {
+//            for(int j=0; j<5; j++) {
+//                if(j+1 >= i) {
+//                    System.out.print("* ");
+//                } else {
+//                    System.out.print("  ");
+//                }
+//            }
+//            System.out.println("");
+//        }
+//    }
+
+//    public static void printPatternSix() {
+//        for(int i=0; i<5; i++) {
+//            for(int j=0; j<5; j++) {
+//                if(j+i > 3) {
+//                    System.out.print("* ");
+//                } else {
+//                    System.out.print("  ");
+//                }
+//            }
+//            for(int j=0; j<4; j++) {
+//                if(j < i) {
+//                    System.out.print("* ");
+//                } else {
+//                    System.out.print("  ");
+//                }
+//            }
+//            System.out.println();
+//        }
+//    }
+//    public static void printPatternSeven() {
+//        for(int i=0; i<5; i++) {
+//        for(int j=0; j<5; j++) {
+//            if(j+i > 3) {
+//                System.out.print("* ");
+//            } else {
+//                System.out.print("  ");
+//            }
+//        }
+//        for(int j=0; j<4; j++) {
+//            if(j < i) {
+//                System.out.print("* ");
+//            } else {
+//                System.out.print("  ");
+//            }
+//        }
+//        System.out.println();
+//    }
+//        for(int i=0; i<4; i++) {
+//            for(int j=0; j<5; j++) {
+//                if(j>i) {
+//                    System.out.print("* ");
+//                } else {
+//                    System.out.print("  ");
+//                }
+//            }
+//            for(int j=0; j<3; j++) {
+//                if(j + i < 3) {
+//                    System.out.print("* ");
+//                } else {
+//                    System.out.print("  ");
+//                }
+//            }
+//            System.out.println();
+//        }
 //    }
 }
