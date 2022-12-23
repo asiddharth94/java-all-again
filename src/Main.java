@@ -72,6 +72,9 @@ public class Main {
 //        printPatternFive();
 //        printPatternSix();
 //        printPatternSeven();
+
+        int[] inputArr = {3, 6, 9, 32, 4, 1, 5, 11, 34, 23, 31};
+        System.out.println(findSecondLargest(inputArr));
     }
 
 //    static methods belong to the class, non-static methods belong to instances of the class.
@@ -278,4 +281,23 @@ public class Main {
 //            System.out.println();
 //        }
 //    }
+
+    public static int findSecondLargest(int[] arr) {
+        int largest = arr[0];
+        int secondLargest = arr[0];
+
+//        if the number is less than secondLargest, continue
+//        if the number is greater than largest, update both
+//        if the number < largest && number > secondLargest, update secondLargest
+        for(int i=1; i<arr.length; i++) {
+            if(arr[i] > largest) {
+                secondLargest = largest;
+                largest = arr[i];
+            } else if(arr[i] > secondLargest) {
+                secondLargest = arr[i];
+            }
+        }
+
+        return secondLargest;
+    }
 }
