@@ -72,9 +72,35 @@ public class Main {
 //        printPatternFive();
 //        printPatternSix();
 //        printPatternSeven();
+//
+//        int[] inputArr = {3, 6, 9, 32, 4, 1, 5, 11, 34, 23, 31};
+//        System.out.println(findSecondLargest(inputArr));
 
-        int[] inputArr = {3, 6, 9, 32, 4, 1, 5, 11, 34, 23, 31};
-        System.out.println(findSecondLargest(inputArr));
+//        int[] inputArr = {3, 6, 9, 32, 4, 1, 5, 11, 34, 23, 31};
+//        int[] outputArr = leftRotate1DArray(inputArr);
+//        for (int x: outputArr) {
+//            System.out.print(x+" ");
+//        }
+
+//        int[][] inputArr1 = {{3, 6, 9}, {32, 4, 1}, {5, 11, 34}};
+//        int[][] inputArr2 = {{13, 4, 2}, {4, 9, 1}, {8, 31, 23}};
+//        int[][] outputMatrix = addMatrices(inputArr1, inputArr2);
+//        for(int i=0; i<outputMatrix.length; i++) {
+//            for(int j=0; j<outputMatrix[0].length; j++) {
+//                System.out.print(outputMatrix[i][j] + " ");
+//            }
+//            System.out.println("");
+//        }
+//
+//        int[][] inputArr1 = {{3, 6, 9}, {32, 4, 1}, {5, 11, 34}};
+//        int[][] inputArr2 = {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}};
+//        int[][] outputMatrix = multiplyMatrices(inputArr1, inputArr2);
+//        for(int i=0; i<outputMatrix.length; i++) {
+//            for(int j=0; j<outputMatrix[0].length; j++) {
+//                System.out.print(outputMatrix[i][j] + " ");
+//            }
+//            System.out.println("");
+//        }
     }
 
 //    static methods belong to the class, non-static methods belong to instances of the class.
@@ -282,22 +308,69 @@ public class Main {
 //        }
 //    }
 
-    public static int findSecondLargest(int[] arr) {
-        int largest = arr[0];
-        int secondLargest = arr[0];
+//    public static int findSecondLargest(int[] arr) {
+//        int largest = arr[0];
+//        int secondLargest = arr[0];
+//
+////        if the number is less than secondLargest, continue
+////        if the number is greater than largest, update both
+////        if the number < largest && number > secondLargest, update secondLargest
+//        for(int i=1; i<arr.length; i++) {
+//            if(arr[i] > largest) {
+//                secondLargest = largest;
+//                largest = arr[i];
+//            } else if(arr[i] > secondLargest) {
+//                secondLargest = arr[i];
+//            }
+//        }
+//
+//        return secondLargest;
+//    }
 
-//        if the number is less than secondLargest, continue
-//        if the number is greater than largest, update both
-//        if the number < largest && number > secondLargest, update secondLargest
-        for(int i=1; i<arr.length; i++) {
-            if(arr[i] > largest) {
-                secondLargest = largest;
-                largest = arr[i];
-            } else if(arr[i] > secondLargest) {
-                secondLargest = arr[i];
-            }
-        }
+//    public static int[] leftRotate1DArray(int[] arr) {
+//        int[] rotatedArr = new int[arr.length];
+//
+//        int temp = arr[0];
+//
+//        for(int i=1; i<arr.length; i++) {
+//            rotatedArr[i-1] = arr[i];
+//        }
+//        rotatedArr[rotatedArr.length-1] = temp;
+//        return rotatedArr;
+//    }
 
-        return secondLargest;
-    }
+//    public static int[][] addMatrices(int[][] m1, int[][] m2) {
+//    Matrices should be of same dimension mxn , for performing addition and subtraction
+//        int numOfRows = m1.length;
+//        int numOfCols = m1[0].length;
+//        int[][] addedMatrix = new int[numOfRows][numOfCols];
+//
+//        for(int i=0; i<numOfRows; i++) {
+//            for(int j=0; j<numOfCols; j++) {
+//                addedMatrix[i][j] = m1[i][j] + m2[i][j];
+//            }
+//        }
+//
+//        return addedMatrix;
+//    }
+
+//    public static int[][] multiplyMatrices(int[][] m1, int[][] m2) {
+//        Number of cols of first matrix (mxn) should be equal to
+//        number of rows of second matrix (nxp) , for performing multiplication (mxp)
+//        int numOfRows = m1.length;
+//        int numOfCols = m1[0].length;
+//        int[][] multipliedMatrix = new int[numOfRows][numOfCols];
+//
+//        for(int i=0; i<numOfRows; i++) {
+//            for(int j=0; j<numOfCols; j++) {
+//                int res = 0;
+//                for(int k=0; k<m2.length; k++) {
+//                    res = res + m1[i][k] * m2[k][j];
+//                }
+//                multipliedMatrix[i][j] = res;
+//            }
+//        }
+//
+//        return multipliedMatrix;
+//    }
 }
