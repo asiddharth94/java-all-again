@@ -3,6 +3,17 @@
 public class Main {
     public static void main(String[] args) {
 
+        Circle circle = new Circle();
+        circle.radius = 5;
+        double areaOfCircle = circle.calculateArea();
+        System.out.println(areaOfCircle);
+
+        Rectangle rect = new Rectangle();
+        rect.length = 10;
+        rect.breadth = 10;
+        double areaOfRect = rect.calculateArea();
+        System.out.println(areaOfRect);
+
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter the base of the triangle:");
 //        float base = sc.nextFloat();
