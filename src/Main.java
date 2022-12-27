@@ -3,21 +3,21 @@
 public class Main {
     public static void main(String[] args) {
 
-        Circle circle = new Circle();
-        circle.setRadius(5);
-        double areaOfCircle = circle.calculateArea();
-        System.out.println(areaOfCircle);
-
-        Rectangle rect1 = new Rectangle();
-        double areaOfRect1 = rect1.calculateArea();
-        System.out.println(areaOfRect1);
-        Rectangle rect2 = new Rectangle(10, 5);
-        double areaOfRect2 = rect2.calculateArea();
-        System.out.println(areaOfRect2);
-
-        Cylinder cylinder = new Cylinder(5, 10);
-        double areaOfCylinder = cylinder.calculateArea();
-        System.out.println(areaOfCylinder);
+//        Circle circle = new Circle();
+//        circle.setRadius(5);
+//        double areaOfCircle = circle.calculateArea();
+//        System.out.println(areaOfCircle);
+//
+//        Rectangle rect1 = new Rectangle();
+//        double areaOfRect1 = rect1.calculateArea();
+//        System.out.println(areaOfRect1);
+//        Rectangle rect2 = new Rectangle(10, 5);
+//        double areaOfRect2 = rect2.calculateArea();
+//        System.out.println(areaOfRect2);
+//
+//        Cylinder cylinder = new Cylinder(5, 10);
+//        double areaOfCylinder = cylinder.calculateArea();
+//        System.out.println(areaOfCylinder);
 
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter the base of the triangle:");
@@ -117,6 +117,23 @@ public class Main {
 //            }
 //            System.out.println("");
 //        }
+
+//        An array of Subject objects
+        Subject[] subjects = new Subject[3];
+
+        subjects[0] = new Subject((short) 1, "Maths", (short) 100, (short) 99);
+        subjects[1] = new Subject((short) 2, "English", (short) 100, (short) 96);
+        subjects[2] = new Subject((short) 3, "Science", (short) 100, (short) 98);
+
+        Student studentOne = new Student((short) 4, "Ryan");
+        studentOne.setSubjects(subjects);
+
+//        Subject[] studentOneSubjects = studentOne.getSubjects();
+//        for(Subject subject: studentOneSubjects) {
+//            System.out.println(subject);
+//        }
+        System.out.println(studentOne);
+
     }
 
 //    static methods belong to the class, non-static methods belong to instances of the class.
