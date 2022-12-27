@@ -1,8 +1,16 @@
 public class Circle {
 
-    public double radius;
+    private double radius;
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
 
     public double calculateArea() {
-        return Math.PI*radius*radius;
+        return Math.PI*getRadius()*getRadius();
     }
 }

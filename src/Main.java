@@ -4,15 +4,20 @@ public class Main {
     public static void main(String[] args) {
 
         Circle circle = new Circle();
-        circle.radius = 5;
+        circle.setRadius(5);
         double areaOfCircle = circle.calculateArea();
         System.out.println(areaOfCircle);
 
-        Rectangle rect = new Rectangle();
-        rect.length = 10;
-        rect.breadth = 10;
-        double areaOfRect = rect.calculateArea();
-        System.out.println(areaOfRect);
+        Rectangle rect1 = new Rectangle();
+        double areaOfRect1 = rect1.calculateArea();
+        System.out.println(areaOfRect1);
+        Rectangle rect2 = new Rectangle(10, 5);
+        double areaOfRect2 = rect2.calculateArea();
+        System.out.println(areaOfRect2);
+
+        Cylinder cylinder = new Cylinder(5, 10);
+        double areaOfCylinder = cylinder.calculateArea();
+        System.out.println(areaOfCylinder);
 
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter the base of the triangle:");
