@@ -119,21 +119,27 @@ public class Main {
 //        }
 
 //        An array of Subject objects
-        Subject[] subjects = new Subject[3];
-
-        subjects[0] = new Subject((short) 1, "Maths", (short) 100, (short) 99);
-        subjects[1] = new Subject((short) 2, "English", (short) 100, (short) 96);
-        subjects[2] = new Subject((short) 3, "Science", (short) 100, (short) 98);
-
-        Student studentOne = new Student((short) 4, "Ryan");
-        studentOne.setSubjects(subjects);
+//        Subject[] subjects = new Subject[3];
+//
+//        subjects[0] = new Subject((short) 1, "Maths", (short) 100, (short) 99);
+//        subjects[1] = new Subject((short) 2, "English", (short) 100, (short) 96);
+//        subjects[2] = new Subject((short) 3, "Science", (short) 100, (short) 98);
+//
+//        Student studentOne = new Student((short) 4, "Ryan");
+//        studentOne.setSubjects(subjects);
 
 //        Subject[] studentOneSubjects = studentOne.getSubjects();
 //        for(Subject subject: studentOneSubjects) {
 //            System.out.println(subject);
 //        }
-        System.out.println(studentOne);
+//        System.out.println(studentOne);
 
+        Cuboid cuboid = new Cuboid();
+        cuboid.setLength(10);
+        cuboid.setBreadth(5);
+        System.out.println(cuboid.calculateArea());
+        cuboid.setHeight(10);
+        System.out.println(cuboid.calculateVolume());
     }
 
 //    static methods belong to the class, non-static methods belong to instances of the class.

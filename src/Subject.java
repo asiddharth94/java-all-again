@@ -18,23 +18,23 @@ public class Subject {
         return totalMarks;
     }
 
-    public void setTotalMarks(short totalMarks) {
-        this.totalMarks = totalMarks;
+    public void setTotalMarks(short tM) {
+        totalMarks = tM;
     }
 
     public short getMarksObtained() {
         return marksObtained;
     }
 
-    public void setMarksObtained(short marksObtained) {
-        this.marksObtained = marksObtained;
+    public void setMarksObtained(short mO) {
+        marksObtained = mO;
     }
 
-    public Subject(short subjectId, String subjectName, short totalMarks, short marksObtained) {
-        this.subjectId = subjectId;
-        this.subjectName = subjectName;
-        this.totalMarks = totalMarks;
-        this.marksObtained = marksObtained;
+    public Subject(short subId, String subName, short tM, short mO) {
+        subjectId = subId;
+        subjectName = subName;
+        totalMarks = tM;
+        marksObtained = mO;
     }
     @Override
     public String toString() {

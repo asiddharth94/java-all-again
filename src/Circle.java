@@ -6,8 +6,8 @@ public class Circle {
         return radius;
     }
 
-    public void setRadius(double radius) {
-        this.radius = radius;
+    public void setRadius(double r) {
+        radius = r;
     }
 
     public double calculateArea() {

@@ -7,16 +7,16 @@ public class Cylinder {
         return height;
     }
 
-    public void setHeight(double height) {
-        this.height = height;
+    public void setHeight(double h) {
+        height = h;
     }
 
     public double getRadius() {
         return radius;
     }
 
-    public void setRadius(double radius) {
-        this.radius = radius;
+    public void setRadius(double r) {
+        radius = r;
     }
 
     public Cylinder() {

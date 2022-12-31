@@ -9,13 +9,13 @@ public class Student {
         return subjects;
     }
 
-    public void setSubjects(Subject[] subjects) {
-        this.subjects = subjects;
+    public void setSubjects(Subject[] subs) {
+        subjects = subs;
     }
 
-    public Student(short rollNumber, String name) {
-        this.rollNumber = rollNumber;
-        this.name = name;
+    public Student(short rollNum, String n) {
+        rollNumber = rollNum;
+        name = n;
     }
 
     @Override

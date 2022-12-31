@@ -7,16 +7,16 @@ public class Rectangle {
         return length;
     }
 
-    public void setLength(double length) {
-        this.length = length;
+    public void setLength(double l) {
+        length = l;
     }
 
     public double getBreadth() {
         return breadth;
     }
 
-    public void setBreadth(double breadth) {
-        this.breadth = breadth;
+    public void setBreadth(double b) {
+        breadth = b;
     }
 
     public Rectangle() {
