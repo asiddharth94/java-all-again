@@ -3,11 +3,11 @@ public class Circle {
     private double radius;
 
     public double getRadius() {
-        return radius;
+        return this.radius;
     }
 
-    public void setRadius(double r) {
-        radius = r;
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
 
     public double calculateArea() {

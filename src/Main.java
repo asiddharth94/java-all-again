@@ -134,12 +134,19 @@ public class Main {
 //        }
 //        System.out.println(studentOne);
 
+//        Cuboid cuboid = new Cuboid();
+//        cuboid.setLength(10);
+//        cuboid.setBreadth(5);
+//        System.out.println(cuboid.calculateArea());
+//        cuboid.setHeight(5);
+//        System.out.println(cuboid.calculateVolume());
+
         Cuboid cuboid = new Cuboid();
-        cuboid.setLength(10);
-        cuboid.setBreadth(5);
-        System.out.println(cuboid.calculateArea());
-        cuboid.setHeight(10);
-        System.out.println(cuboid.calculateVolume());
+        cuboid.display();
+
+//        dynamic method dispatch
+        Rectangle rect = new Cuboid();
+        rect.display(); //THE METHOD WILL BE CALLED DEPENDING ON THE OBJECT, NOT THE REFERENCE.
     }
 
 //    static methods belong to the class, non-static methods belong to instances of the class.

@@ -3,22 +3,27 @@ public class Cuboid extends Rectangle {
     private double height;
 
     public double getHeight() {
-        return height;
+        return this.height;
     }
 
-    public void setHeight(double h) {
-        height = h;
+    public void setHeight(double height) {
+        this.height = height;
     }
 
     public Cuboid () {
-        height = 0;
+        this.height = 0;
     }
 
-    public Cuboid (double h) {
-        height = height;
+    public Cuboid (double height) {
+        this.height = height;
     }
 
     public double calculateVolume () {
         return calculateArea() * getHeight();
+    }
+
+    @Override
+    public void display() {
+        System.out.println("Hello From Cuboid");
     }
 }

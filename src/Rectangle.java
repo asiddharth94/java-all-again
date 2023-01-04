@@ -7,16 +7,16 @@ public class Rectangle {
         return length;
     }
 
-    public void setLength(double l) {
-        length = l;
+    public void setLength(double length) {
+        this.length = length;
     }
 
     public double getBreadth() {
         return breadth;
     }
 
-    public void setBreadth(double b) {
-        breadth = b;
+    public void setBreadth(double breadth) {
+        this.breadth = breadth;
     }
 
     public Rectangle() {
@@ -31,5 +31,9 @@ public class Rectangle {
 
     public double calculateArea() {
         return getLength()*getBreadth();
+    }
+
+    public void display() {
+        System.out.println("Hello From Rectangle");
     }
 }
